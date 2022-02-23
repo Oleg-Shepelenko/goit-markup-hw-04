@@ -123,6 +123,32 @@ body {
   display: flex;
   margin-left: auto;
 }
+.contacts-header .link::before {
+  display: inline-flex;
+  content: '';
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.contacts-header .icon-envelope::before {
+  background-image: url(../images/st1/header/envelope.svg);
+  fill: var(--primary-text-color);
+}
+
+.contacts-header .icon-smartphone::before {
+  background-image: url(../images/st1/header/smartphone.svg);
+}
+
+/* .contacts-header .icon-envelope:hover::before,
+.contacts-header .icon-envelope:focus::before,
+.contacts-header .icon-smartphone:hover::before,
+.contacts-header .icon-smartphone:focus::before {
+  fill: var(--accent-color);
+} */
 
 .contacts-header .item + .item {
   margin-left: 50px;
@@ -142,15 +168,20 @@ body {
 /* hero */
 .hero {
   max-width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
   background-color: var(--first-bg-color);
-  background-image: url(../images/st1/hero/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/st1/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
+
 .hero-title {
   width: 696px;
   margin-left: auto;
@@ -201,6 +232,29 @@ body {
 
 .feature-items:nth-child(4n) {
   margin-right: 0px;
+}
+.feature-items::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px;
+  background-color: var(--second-bg-color);
+}
+
+.icon-antenna::before {
+  background-image: url(../images/st1/feature/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/st1/feature/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/st1/feature/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/st1/feature/astronaut.svg);
 }
 
 .feature .feature-title {
@@ -341,6 +395,9 @@ body {
   color: var(--hidden-text-color);
 }
 
+.contacts-footer-list {
+}
+
 /* socials */
 
 .socials {
@@ -378,6 +435,7 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .gallery-button:focus,
