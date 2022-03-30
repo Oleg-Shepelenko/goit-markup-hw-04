@@ -115,40 +115,34 @@ body {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
 .contacts-header {
   display: flex;
   margin-left: auto;
 }
-.contacts-header .link::before {
+
+.icon-header {
   display: inline-flex;
-  content: '';
   width: 16px;
   height: 12px;
   margin-right: 10px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-}
-
-.contacts-header .icon-envelope::before {
-  background-image: url(../images/st1/header/envelope.svg);
   fill: var(--primary-text-color);
+  cursor: pointer;
 }
 
-.contacts-header .icon-smartphone::before {
-  background-image: url(../images/st1/header/smartphone.svg);
-}
-
-/* .contacts-header .icon-envelope:hover::before,
-.contacts-header .icon-envelope:focus::before,
-.contacts-header .icon-smartphone:hover::before,
-.contacts-header .icon-smartphone:focus::before {
+.icon-header:hover {
   fill: var(--accent-color);
-} */
+}
+
+.item-envelope {
+  margin-right: 30px;
+}
 
 .contacts-header .item + .item {
   margin-left: 50px;
@@ -233,28 +227,18 @@ body {
 .feature-items:nth-child(4n) {
   margin-right: 0px;
 }
-.feature-items::before {
+.icon-feature {
   display: block;
-  content: '';
+  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 70px;
+  background-size: 7px;
   background-color: var(--second-bg-color);
 }
 
-.icon-antenna::before {
-  background-image: url(../images/st1/feature/antenna.svg);
-}
-.icon-clock::before {
-  background-image: url(../images/st1/feature/clock.svg);
-}
-.icon-diagram::before {
-  background-image: url(../images/st1/feature/diagram.svg);
-}
-.icon-astronaut::before {
-  background-image: url(../images/st1/feature/astronaut.svg);
+.icon-diagram {
 }
 
 .feature .feature-title {
