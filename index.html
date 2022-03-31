@@ -37,17 +37,19 @@
           </ul>
         </nav>
       <ul class="contacts-header list">
-            <li class="item-envelope">
-              <svg class="icon-header" width="16" height="12">
+            <li class="item">
+             <a class="contact link" href="mailto:info@devstudio.com"> 
+               <svg class="icon-header" width="16" height="12">
                 <use href="./images/st1/symbol-defs.svg#icon-envelope"></use>
               </svg>
-              <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              info@devstudio.com</a>
             </li>
-            <li class="item-smartphone">
-              <svg class="icon-header" width="10" height="16">
+            <li class="item">
+              <a class="contact link" href="tel:+380961111111">
+                <svg class="icon-header" width="10" height="16">
                 <use href="./images/st1/symbol-defs.svg#icon-smartphone"></use>
               </svg>
-              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              +38 096 111 11 11</a>
             </li>
           </ul>
       </div>        
@@ -68,9 +70,11 @@
           <ul class="feature-list list">
             
            <li class="feature-items">
-             <svg class="icon-feature">
+             <div class="badge">
+             <svg class="badge-icon" width="70" height="70" >
                 <use href="./images/st1/symbol-defs.svg#icon-antenna"></use>
               </svg>
+              </div>
             <h3 class="feature-title">Внимание к деталям</h3>
             <p class="feature-text">
               Идейные соображения, а также начало повседневной работы по формированию позиции.
@@ -78,9 +82,11 @@
           </li>
 
           <li class="feature-items">
-            <svg class="icon-feature">
+            <div class="badge">
+            <svg class="badge-icon" width="70" height="70" >
                 <use href="./images/st1/symbol-defs.svg#icon-clock"></use>
               </svg>
+              </div>
             <h3 class="feature-title">Пунктуальность</h3>
             <p class="feature-text">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
@@ -88,9 +94,11 @@
           </li>
 
           <li class="feature-items">
-            <svg class="icon-feature">
+            <div class="badge">
+            <svg class="badge-icon" width="70" height="70" >
                 <use href="./images/st1/symbol-defs.svg#icon-diagram"></use>
               </svg>
+              </div>
             <h3 class="feature-title">Планирование</h3>
             <p class="feature-text">
               Равным образом консультация с широким активом в значительной степени обуславливает.
@@ -98,9 +106,11 @@
           </li>
 
           <li class="feature-items">
-            <svg class="icon-feature">
+            <div class="badge">
+            <svg class="badge-icon" width="70" height="70" >
                 <use href="./images/st1/symbol-defs.svg#icon-astronaut"></use>
               </svg>
+              </div>
             <h3 class="feature-title">Современные технологии</h3>
             <p class="feature-text">
               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -159,6 +169,28 @@
             <div class="team-sign">
             <h3 class="team-subject">Игорь Демьяненко</h3>
             <p class="team-text" lang="en">Product Designer</p>
+            <ul class="team-media">
+              <li class="team-media-list">
+                <a class="team-media-list-icon" href="">
+                <svg class="teams-icons">
+                <use href="./images/st1/symbol-defs.svg#icon-instagram"></use>
+              </svg></a></li>
+              <li class="team-media-list">
+                <a class="team-media-list-icon" href="">
+                <svg class="teams-icons">
+                <use href="./images/st1/symbol-defs.svg#icon-twitter"></use>
+              </svg></a></li>
+              <li class="team-media-list">
+                <a class="team-media-list-icon" href="">
+                <svg class="teams-icons">
+                <use href="./images/st1/symbol-defs.svg#icon-facebook"></use>
+              </svg></a></li>
+              <li class="team-media-list">
+                <a class="team-media-list-icon" href="">
+                <svg class="teams-icons">
+                <use href="./images/st1/symbol-defs.svg#icon-linkedin"></use>
+              </svg></a></li>
+            </ul>
           </div>
           </li>
           <li class="team-items">
@@ -214,11 +246,13 @@
     <!-- Подвал проекта -->
     <footer class="footer">
       <div class="container">
+        <ul class="footer-address list">
+          <li class="footer-list">
       <a class="logo-secondary" href=""><span class="logo-primary">Web</span>Studio</a>
       <address class="contacts-footer">
         <ul class="contacts-footer-list list">
           <li>
-            <a class="address-footer" href="" target="_blank" rel="noopener noreferrer"
+            <a class="address-link" href="" target="_blank" rel="noopener noreferrer"
               >г. Киев, пр-т Леси Украинки, 26
             </a>
           </li>
@@ -226,15 +260,19 @@
           <li><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
         </ul>
       </address>
+      </li>
+      <li class="footer-list">
         <section class="socials">
-      <h2 class="socials-title">присоединяйтесь</h2> 
-      <ul class="socials-list ">
+      <h3 class="socials-title">присоединяйтесь</h3> 
+      <ul class="socials-list list">
         <li class="socials-items"></li>
         <li class="socials-items"></li>
         <li class="socials-items"></li>
         <li class="socials-items"></li>
       </ul>
-      </section> 
+      
+      </li>
+      </ul>
             </div>
 
     </footer>
